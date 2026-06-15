@@ -53,6 +53,7 @@ header p {
   display: flex;
   gap: 12px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .site-nav a {
@@ -72,6 +73,21 @@ header p {
 .site-nav a.active {
   background: #6366f1;
   color: white;
+}
+
+/* Make embedded media and images scale down on small screens */
+img,
+picture,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Prevent nav links from breaking awkwardly and allow wrapping */
+.site-nav a {
+  white-space: nowrap;
 }
 
 section {
@@ -134,10 +150,15 @@ ul li::before {
   }
 
   .container {
-    padding: 24px;
+    padding: 16px;
+    border-radius: 16px;
   }
 
   section {
     padding: 20px;
+  }
+
+  .site-nav {
+    gap: 8px;
   }
 }
