@@ -49,6 +49,31 @@ header p {
   font-size: 1rem;
 }
 
+.site-nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.site-nav a {
+  color: #475569;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.site-nav a:hover {
+  background: rgba(99, 102, 241, 0.08);
+  color: #0f172a;
+}
+
+.site-nav a.active {
+  background: #6366f1;
+  color: white;
+}
+
 section {
   margin-bottom: 24px;
   padding: 24px;
