@@ -1,0 +1,107 @@
+/* ============================================================
+   UNIVERSAL — applies to ALL pages
+============================================================ */
+
+/* RESET + BASE */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background: repeating-linear-gradient(
+    90deg,
+    #b0b487 0px,
+    #b0b487 15px,
+    #c6d2d2 15px,
+    #c6d2d2 30px,
+    #b0b487 30px,
+    #b0b487 45px
+  );
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.site-header {
+  background-color: #5b4f3b;
+  color: #b0b487;
+  height: 110px;
+  padding: 20px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 1.6rem; /* FIXED TYPO */
+  font-weight: 700;
+  color: #b0b487;
+}
+
+.site-nav {
+  display: flex;
+  gap: 22px;
+}
+
+.site-nav a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #b0b487;
+  line-height: 40px;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.thin-footer {
+  background: #5b4f3b;
+  padding: 8px 0;
+  text-align: center;
+  color: #b0b487;
+  font-weight: 600;
+  border-top: 2px solid #5b4f3b;
+  margin-top: auto;
+}
+
+/* UNIVERSAL WRAPPER */
+.page-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* UNIVERSAL BOX */
+.page-box {
+  background: #c6d2d2;
+  border: 2px solid #5b4f3b;
+  padding: 25px 30px;
+}
+
+.page-box h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #5b4f3b;
+}
+
+.page-box p,
+.page-box li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5b4f3b;
+}
+
+.page-box ul {
+  padding-left: 20px;
+}
